@@ -1,0 +1,181 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 600" width="1024" height="600" font-family="'Roboto','Arial',sans-serif">
+  <!-- Apps drawer screen -->
+  <rect width="1024" height="600" fill="#0A1628"/>
+  <rect width="1024" height="600" fill="#112240" opacity="0.95"/>
+
+  <!-- Título -->
+  <text x="50" y="45" font-size="22" font-weight="700" fill="white">Apps instaladas</text>
+  
+  <!-- Botones título -->
+  <rect x="880" y="18" width="40" height="40" rx="10" fill="#112240" stroke="#1565C0" stroke-width="1"/>
+  <text x="900" y="43" font-size="20" text-anchor="middle">⊞</text>
+  <rect x="930" y="18" width="40" height="40" rx="10" fill="#112240" stroke="#1565C0" stroke-width="1"/>
+  <text x="950" y="43" font-size="20" text-anchor="middle" fill="white">✏</text>
+  <rect x="980" y="18" width="40" height="40" rx="10" fill="#112240" stroke="#1565C0" stroke-width="1"/>
+  <text x="1000" y="43" font-size="16" text-anchor="middle" fill="#78909C">✕</text>
+  
+  <rect x="40" y="58" width="944" height="1" fill="#1565C0" opacity="0.4"/>
+  
+  <!-- Texto modo edición -->
+  <rect x="40" y="65" width="944" height="24" rx="5" fill="#0D3060" opacity="0.5"/>
+  <text x="512" y="81" font-size="11" fill="#42A5F5" text-anchor="middle">✏ Modo edición — Mantén presionado y arrastra · Toca el 📌 para anclar al dock</text>
+
+  <!-- Búsqueda -->
+  <rect x="40" y="95" width="944" height="40" rx="10" fill="#0D1E35" stroke="#1565C0" stroke-width="1" opacity="0.8"/>
+  <text x="65" y="120" font-size="16" fill="#37474F">🔍</text>
+  <text x="90" y="120" font-size="14" fill="#37474F">Buscar app...</text>
+  
+  <rect x="40" y="142" width="944" height="1" fill="#1A2F4A"/>
+
+  <!-- Grid de aplicaciones (5 columnas) -->
+  <!-- Fila 1 -->
+  <!-- WhatsApp -->
+  <rect x="62" y="152" width="80" height="85" rx="12" fill="#0A1E36"/>
+  <rect x="62" y="152" width="80" height="85" rx="12" fill="none" stroke="#1565C0" stroke-width="1" opacity="0.4"/>
+  <!-- Pin indicador -->
+  <circle cx="134" cy="162" r="8" fill="#1565C0"/>
+  <text x="134" y="166" font-size="8" text-anchor="middle" fill="white">📌</text>
+  <text x="102" y="205" font-size="30" text-anchor="middle">💬</text>
+  <text x="102" y="228" font-size="10" fill="#B0BEC5" text-anchor="middle">WhatsApp</text>
+
+  <!-- YouTube -->
+  <rect x="162" y="152" width="80" height="85" rx="12" fill="#0A1E36"/>
+  <rect x="162" y="152" width="80" height="85" rx="12" fill="none" stroke="#37474F" stroke-width="1" opacity="0.4"/>
+  <text x="202" y="205" font-size="30" text-anchor="middle">▶</text>
+  <text x="202" y="228" font-size="10" fill="#B0BEC5" text-anchor="middle">YouTube</text>
+  <!-- Pin fantasma (modo edición) -->
+  <circle cx="234" cy="162" r="8" fill="#37474F" opacity="0.4"/>
+  <text x="234" y="166" font-size="8" text-anchor="middle" fill="#546E7A" opacity="0.6">📌</text>
+
+  <!-- Spotify -->
+  <rect x="262" y="152" width="80" height="85" rx="12" fill="#0A1E36"/>
+  <rect x="262" y="152" width="80" height="85" rx="12" fill="none" stroke="#37474F" stroke-width="1" opacity="0.4"/>
+  <text x="302" y="205" font-size="30" text-anchor="middle">🎵</text>
+  <text x="302" y="228" font-size="10" fill="#B0BEC5" text-anchor="middle">Spotify</text>
+  <circle cx="334" cy="162" r="8" fill="#37474F" opacity="0.4"/>
+  <text x="334" y="166" font-size="8" text-anchor="middle" fill="#546E7A" opacity="0.6">📌</text>
+
+  <!-- Maps -->
+  <rect x="362" y="152" width="80" height="85" rx="12" fill="#0A1E36"/>
+  <circle cx="434" cy="162" r="8" fill="#1565C0"/>
+  <text x="434" y="166" font-size="8" text-anchor="middle" fill="white">📌</text>
+  <text x="402" y="205" font-size="30" text-anchor="middle">🗺</text>
+  <text x="402" y="228" font-size="10" fill="#B0BEC5" text-anchor="middle">Maps</text>
+
+  <!-- Teléfono -->
+  <rect x="462" y="152" width="80" height="85" rx="12" fill="#0A1E36"/>
+  <circle cx="534" cy="162" r="8" fill="#1565C0"/>
+  <text x="534" y="166" font-size="8" text-anchor="middle" fill="white">📌</text>
+  <text x="502" y="205" font-size="30" text-anchor="middle">📞</text>
+  <text x="502" y="228" font-size="10" fill="#B0BEC5" text-anchor="middle">Teléfono</text>
+
+  <!-- Cámara -->
+  <rect x="562" y="152" width="80" height="85" rx="12" fill="#0A1E36"/>
+  <circle cx="634" cy="162" r="8" fill="#37474F" opacity="0.4"/>
+  <text x="602" y="205" font-size="30" text-anchor="middle">📷</text>
+  <text x="602" y="228" font-size="10" fill="#B0BEC5" text-anchor="middle">Cámara</text>
+
+  <!-- Ajustes -->
+  <rect x="662" y="152" width="80" height="85" rx="12" fill="#0A1E36"/>
+  <circle cx="734" cy="162" r="8" fill="#37474F" opacity="0.4"/>
+  <text x="702" y="205" font-size="30" text-anchor="middle">⚙️</text>
+  <text x="702" y="228" font-size="10" fill="#B0BEC5" text-anchor="middle">Ajustes</text>
+
+  <!-- Chrome -->
+  <rect x="762" y="152" width="80" height="85" rx="12" fill="#0A1E36"/>
+  <circle cx="834" cy="162" r="8" fill="#37474F" opacity="0.4"/>
+  <text x="802" y="205" font-size="30" text-anchor="middle">🌐</text>
+  <text x="802" y="228" font-size="10" fill="#B0BEC5" text-anchor="middle">Chrome</text>
+
+  <!-- Drive -->
+  <rect x="862" y="152" width="80" height="85" rx="12" fill="#0A1E36"/>
+  <circle cx="934" cy="162" r="8" fill="#37474F" opacity="0.4"/>
+  <text x="902" y="205" font-size="30" text-anchor="middle">📁</text>
+  <text x="902" y="228" font-size="10" fill="#B0BEC5" text-anchor="middle">Drive</text>
+
+  <!-- Fila 2 -->
+  <!-- Instagram -->
+  <rect x="62" y="248" width="80" height="85" rx="12" fill="#0A1E36"/>
+  <circle cx="134" cy="258" r="8" fill="#37474F" opacity="0.4"/>
+  <text x="102" y="300" font-size="30" text-anchor="middle">📸</text>
+  <text x="102" y="323" font-size="10" fill="#B0BEC5" text-anchor="middle">Instagram</text>
+
+  <!-- Netflix -->
+  <rect x="162" y="248" width="80" height="85" rx="12" fill="#0A1E36"/>
+  <circle cx="234" cy="258" r="8" fill="#37474F" opacity="0.4"/>
+  <text x="202" y="300" font-size="30" text-anchor="middle">🎬</text>
+  <text x="202" y="323" font-size="10" fill="#B0BEC5" text-anchor="middle">Netflix</text>
+
+  <!-- Uber -->
+  <rect x="262" y="248" width="80" height="85" rx="12" fill="#0A1E36"/>
+  <circle cx="334" cy="258" r="8" fill="#37474F" opacity="0.4"/>
+  <text x="302" y="300" font-size="30" text-anchor="middle">🚕</text>
+  <text x="302" y="323" font-size="10" fill="#B0BEC5" text-anchor="middle">Uber</text>
+
+  <!-- Waze -->
+  <rect x="362" y="248" width="80" height="85" rx="12" fill="#0A1E36"/>
+  <circle cx="434" cy="258" r="8" fill="#1565C0"/>
+  <text x="434" y="262" font-size="8" text-anchor="middle" fill="white">📌</text>
+  <text x="402" y="300" font-size="30" text-anchor="middle">🚦</text>
+  <text x="402" y="323" font-size="10" fill="#B0BEC5" text-anchor="middle">Waze</text>
+
+  <!-- iCarMode -->
+  <rect x="462" y="248" width="80" height="85" rx="12" fill="#0A1E36"/>
+  <circle cx="534" cy="258" r="8" fill="#37474F" opacity="0.4"/>
+  <text x="502" y="300" font-size="30" text-anchor="middle">🚗</text>
+  <text x="502" y="323" font-size="10" fill="#B0BEC5" text-anchor="middle">iCarMode</text>
+
+  <!-- OBD App -->
+  <rect x="562" y="248" width="80" height="85" rx="12" fill="#0A1E36"/>
+  <circle cx="634" cy="258" r="8" fill="#37474F" opacity="0.4"/>
+  <text x="602" y="300" font-size="30" text-anchor="middle">🔧</text>
+  <text x="602" y="323" font-size="10" fill="#B0BEC5" text-anchor="middle">OBD</text>
+
+  <!-- Radio -->
+  <rect x="662" y="248" width="80" height="85" rx="12" fill="#0A1E36"/>
+  <circle cx="734" cy="258" r="8" fill="#37474F" opacity="0.4"/>
+  <text x="702" y="300" font-size="30" text-anchor="middle">📻</text>
+  <text x="702" y="323" font-size="10" fill="#B0BEC5" text-anchor="middle">Radio</text>
+
+  <!-- Fila 3 parcial -->
+  <rect x="62" y="344" width="80" height="85" rx="12" fill="#0A1E36" opacity="0.5"/>
+  <text x="102" y="395" font-size="30" text-anchor="middle" opacity="0.5">📱</text>
+  <text x="102" y="418" font-size="10" fill="#546E7A" text-anchor="middle">App 1</text>
+  
+  <rect x="162" y="344" width="80" height="85" rx="12" fill="#0A1E36" opacity="0.5"/>
+  <text x="202" y="395" font-size="30" text-anchor="middle" opacity="0.5">📱</text>
+  <text x="202" y="418" font-size="10" fill="#546E7A" text-anchor="middle">App 2</text>
+
+  <!-- DRAG INDICATOR (app siendo arrastrada) -->
+  <rect x="720" y="310" width="90" height="95" rx="14" fill="#1565C0" opacity="0.3" stroke="#42A5F5" stroke-width="2" stroke-dasharray="5,3"/>
+  <text x="765" y="362" font-size="30" text-anchor="middle" opacity="0.7">📸</text>
+  <text x="765" y="385" font-size="11" fill="#42A5F5" text-anchor="middle">Arrastrando...</text>
+
+  <!-- ═══ DOCK INFERIOR ═══ -->
+  <rect x="0" y="500" width="1024" height="100" fill="#0A1420" opacity="0.95"/>
+  <rect x="0" y="500" width="1024" height="1" fill="#1565C0" opacity="0.5"/>
+  
+  <text x="40" y="522" font-size="10" fill="#546E7A" letter-spacing="2">DOCK — APPS ANCLADAS</text>
+  
+  <!-- Apps ancladas en dock -->
+  <rect x="80" y="528" width="55" height="55" rx="12" fill="#0A1E36" stroke="#1565C0" stroke-width="1"/>
+  <text x="107" y="560" font-size="24" text-anchor="middle">💬</text>
+  <text x="107" y="577" font-size="8" fill="#78909C" text-anchor="middle">WhatsApp</text>
+  
+  <rect x="150" y="528" width="55" height="55" rx="12" fill="#0A1E36" stroke="#1565C0" stroke-width="1"/>
+  <text x="177" y="560" font-size="24" text-anchor="middle">🗺</text>
+  <text x="177" y="577" font-size="8" fill="#78909C" text-anchor="middle">Maps</text>
+  
+  <rect x="220" y="528" width="55" height="55" rx="12" fill="#0A1E36" stroke="#1565C0" stroke-width="1"/>
+  <text x="247" y="560" font-size="24" text-anchor="middle">📞</text>
+  <text x="247" y="577" font-size="8" fill="#78909C" text-anchor="middle">Teléfono</text>
+  
+  <rect x="290" y="528" width="55" height="55" rx="12" fill="#0A1E36" stroke="#1565C0" stroke-width="1"/>
+  <text x="317" y="560" font-size="24" text-anchor="middle">🚦</text>
+  <text x="317" y="577" font-size="8" fill="#78909C" text-anchor="middle">Waze</text>
+
+  <!-- Botón cerrar en dock -->
+  <rect x="940" y="528" width="55" height="55" rx="12" fill="#1565C0" opacity="0.8"/>
+  <text x="967" y="560" font-size="20" text-anchor="middle" fill="white">✕</text>
+  <text x="967" y="577" font-size="8" fill="white" text-anchor="middle">Cerrar</text>
+</svg>

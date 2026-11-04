@@ -1,0 +1,225 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 600" width="1024" height="600" font-family="'Roboto','Arial',sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0A1628;stop-opacity:0.95" />
+      <stop offset="100%" style="stop-color:#0D2137;stop-opacity:0.95" />
+    </linearGradient>
+    <linearGradient id="panelGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#112240;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0A1628;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Fondo oscurecido (pantalla principal detrás) -->
+  <rect width="1024" height="600" fill="url(#bgGrad)"/>
+  <rect width="1024" height="600" fill="#000" opacity="0.5"/>
+
+  <!-- Panel selector de vehículo (overlay centrado) -->
+  <rect x="0" y="0" width="1024" height="600" rx="0" fill="url(#panelGrad)"/>
+
+  <!-- Título -->
+  <text x="512" y="45" font-size="22" font-weight="700" fill="white" text-anchor="middle" letter-spacing="1">🚗  Seleccionar Vehículo</text>
+  <rect x="40" y="58" width="944" height="1" fill="#1565C0" opacity="0.5"/>
+
+  <!-- Filtros de categoría -->
+  <text x="50" y="85" font-size="12" fill="#78909C" letter-spacing="2">CATEGORÍA</text>
+  
+  <!-- Chip Todos (activo) -->
+  <rect x="40" y="93" width="70" height="28" rx="14" fill="#1565C0"/>
+  <text x="75" y="112" font-size="12" fill="white" text-anchor="middle">Todos</text>
+  
+  <!-- Chip Sedán -->
+  <rect x="118" y="93" width="70" height="28" rx="14" fill="#112240" stroke="#1565C0" stroke-width="1"/>
+  <text x="153" y="112" font-size="12" fill="#78909C" text-anchor="middle">Sedán</text>
+  
+  <!-- Chip SUV -->
+  <rect x="196" y="93" width="60" height="28" rx="14" fill="#112240" stroke="#1565C0" stroke-width="1"/>
+  <text x="226" y="112" font-size="12" fill="#78909C" text-anchor="middle">SUV</text>
+  
+  <!-- Chip Pick-up -->
+  <rect x="264" y="93" width="75" height="28" rx="14" fill="#112240" stroke="#1565C0" stroke-width="1"/>
+  <text x="301" y="112" font-size="12" fill="#78909C" text-anchor="middle">Pick-up</text>
+  
+  <!-- Chip Hatchback -->
+  <rect x="347" y="93" width="90" height="28" rx="14" fill="#112240" stroke="#1565C0" stroke-width="1"/>
+  <text x="392" y="112" font-size="12" fill="#78909C" text-anchor="middle">Hatchback</text>
+  
+  <!-- Chip Coupé -->
+  <rect x="445" y="93" width="70" height="28" rx="14" fill="#112240" stroke="#1565C0" stroke-width="1"/>
+  <text x="480" y="112" font-size="12" fill="#78909C" text-anchor="middle">Coupé</text>
+  
+  <!-- Contador -->
+  <text x="50" y="142" font-size="12" fill="#546E7A">32 modelos disponibles</text>
+  <rect x="40" y="150" width="944" height="1" fill="#1A2F4A" opacity="0.6"/>
+
+  <!-- ═══ GRID DE VEHÍCULOS ═══ -->
+  <!-- Fila 1 -->
+  
+  <!-- Toyota Corolla (seleccionado) -->
+  <rect x="40" y="158" width="200" height="118" rx="12" fill="#0D3060" stroke="#1565C0" stroke-width="2"/>
+  <text x="220" y="174" font-size="12" fill="#1565C0" text-anchor="end">✓</text>
+  <!-- Mini SUV silueta -->
+  <path d="M60,235 L60,215 L67,215 L70,195 L200,195 L203,215 L215,215 L215,235 Z" fill="#1976D2"/>
+  <path d="M70,195 L73,185 L197,185 L200,195 Z" fill="#0D47A1"/>
+  <path d="M73,194 L74,186 L105,186 L105,194 Z" fill="#90CAF9" opacity="0.7"/>
+  <path d="M109,194 L109,186 L145,186 L145,194 Z" fill="#90CAF9" opacity="0.7"/>
+  <path d="M149,194 L149,186 L196,186 L196,194 Z" fill="#90CAF9" opacity="0.7"/>
+  <circle cx="80" cy="235" r="14" fill="#111"/>
+  <circle cx="80" cy="235" r="9" fill="#37474F"/>
+  <circle cx="195" cy="235" r="14" fill="#111"/>
+  <circle cx="195" cy="235" r="9" fill="#37474F"/>
+  <text x="137" y="258" font-size="10" fill="#78909C" text-anchor="middle">Toyota</text>
+  <text x="137" y="272" font-size="12" font-weight="700" fill="white" text-anchor="middle">Corolla</text>
+
+  <!-- Honda Civic -->
+  <rect x="252" y="158" width="200" height="118" rx="12" fill="#0A1E36" stroke="#1A3050" stroke-width="1"/>
+  <path d="M272,235 L272,215 L279,215 L282,195 L412,195 L415,215 L427,215 L427,235 Z" fill="#37474F"/>
+  <path d="M282,195 L285,185 L409,185 L412,195 Z" fill="#263238"/>
+  <path d="M285,194 L286,186 L317,186 L317,194 Z" fill="#78909C" opacity="0.6"/>
+  <path d="M321,194 L321,186 L357,186 L357,194 Z" fill="#78909C" opacity="0.6"/>
+  <path d="M361,194 L361,186 L408,186 L408,194 Z" fill="#78909C" opacity="0.6"/>
+  <circle cx="292" cy="235" r="14" fill="#111"/>
+  <circle cx="292" cy="235" r="9" fill="#37474F"/>
+  <circle cx="407" cy="235" r="14" fill="#111"/>
+  <circle cx="407" cy="235" r="9" fill="#37474F"/>
+  <text x="349" y="258" font-size="10" fill="#78909C" text-anchor="middle">Honda</text>
+  <text x="349" y="272" font-size="12" font-weight="700" fill="white" text-anchor="middle">Civic</text>
+
+  <!-- Toyota RAV4 -->
+  <rect x="464" y="158" width="200" height="118" rx="12" fill="#0A1E36" stroke="#1A3050" stroke-width="1"/>
+  <path d="M484,235 L484,212 L492,212 L496,186 L644,186 L648,212 L664,212 L664,235 Z" fill="#CC0000"/>
+  <path d="M496,186 L499,176 L641,176 L644,186 Z" fill="#B71C1C"/>
+  <path d="M499,185 L500,177 L533,177 L533,185 Z" fill="#EF9A9A" opacity="0.6"/>
+  <path d="M537,185 L537,177 L575,177 L575,185 Z" fill="#EF9A9A" opacity="0.6"/>
+  <path d="M579,185 L579,177 L640,177 L640,185 Z" fill="#EF9A9A" opacity="0.6"/>
+  <circle cx="505" cy="235" r="14" fill="#111"/>
+  <circle cx="505" cy="235" r="9" fill="#37474F"/>
+  <circle cx="643" cy="235" r="14" fill="#111"/>
+  <circle cx="643" cy="235" r="9" fill="#37474F"/>
+  <text x="574" y="258" font-size="10" fill="#78909C" text-anchor="middle">Toyota</text>
+  <text x="574" y="272" font-size="12" font-weight="700" fill="white" text-anchor="middle">RAV4</text>
+
+  <!-- Ford F-150 -->
+  <rect x="676" y="158" width="200" height="118" rx="12" fill="#0A1E36" stroke="#1A3050" stroke-width="1"/>
+  <path d="M696,235 L696,210 L705,210 L708,185 L800,185 L800,210 L876,210 L876,235 Z" fill="#2E7D32"/>
+  <path d="M708,185 L710,175 L798,175 L800,185 Z" fill="#1B5E20"/>
+  <path d="M710,184 L711,176 L744,176 L744,184 Z" fill="#A5D6A7" opacity="0.5"/>
+  <path d="M748,184 L748,176 L797,176 L797,184 Z" fill="#A5D6A7" opacity="0.5"/>
+  <circle cx="717" cy="235" r="14" fill="#111"/>
+  <circle cx="717" cy="235" r="9" fill="#37474F"/>
+  <circle cx="860" cy="235" r="14" fill="#111"/>
+  <circle cx="860" cy="235" r="9" fill="#37474F"/>
+  <text x="786" y="258" font-size="10" fill="#78909C" text-anchor="middle">Ford</text>
+  <text x="786" y="272" font-size="12" font-weight="700" fill="white" text-anchor="middle">F-150</text>
+
+  <!-- Fila 2 -->
+  <!-- Nissan Sentra -->
+  <rect x="40" y="286" width="200" height="118" rx="12" fill="#0A1E36" stroke="#1A3050" stroke-width="1"/>
+  <path d="M60,363 L60,345 L66,345 L69,328 L200,328 L203,345 L215,345 L215,363 Z" fill="#C0C0C0"/>
+  <path d="M68,328 C71,320 76,318 82,318 L188,318 C194,318 199,320 202,328 Z" fill="#9E9E9E"/>
+  <path d="M72,327 C75,319 80,319 86,319 L128,319 L128,327 Z" fill="#CFD8DC" opacity="0.7"/>
+  <path d="M132,319 L174,319 C180,319 185,321 188,327 L132,327 Z" fill="#CFD8DC" opacity="0.7"/>
+  <circle cx="80" cy="363" r="14" fill="#111"/>
+  <circle cx="80" cy="363" r="9" fill="#37474F"/>
+  <circle cx="195" cy="363" r="14" fill="#111"/>
+  <circle cx="195" cy="363" r="9" fill="#37474F"/>
+  <text x="137" y="387" font-size="10" fill="#78909C" text-anchor="middle">Nissan</text>
+  <text x="137" y="400" font-size="12" font-weight="700" fill="white" text-anchor="middle">Sentra</text>
+
+  <!-- Hyundai Tucson -->
+  <rect x="252" y="286" width="200" height="118" rx="12" fill="#0A1E36" stroke="#1A3050" stroke-width="1"/>
+  <path d="M272,363 L272,340 L280,340 L284,314 L414,314 L418,340 L427,340 L427,363 Z" fill="#FF6F00"/>
+  <path d="M284,314 L287,304 L411,304 L414,314 Z" fill="#E65100"/>
+  <path d="M287,313 L288,305 L319,305 L319,313 Z" fill="#FFCC80" opacity="0.6"/>
+  <path d="M323,313 L323,305 L361,305 L361,313 Z" fill="#FFCC80" opacity="0.6"/>
+  <path d="M365,313 L365,305 L410,305 L410,313 Z" fill="#FFCC80" opacity="0.6"/>
+  <circle cx="292" cy="363" r="14" fill="#111"/>
+  <circle cx="292" cy="363" r="9" fill="#37474F"/>
+  <circle cx="407" cy="363" r="14" fill="#111"/>
+  <circle cx="407" cy="363" r="9" fill="#37474F"/>
+  <text x="349" y="387" font-size="10" fill="#78909C" text-anchor="middle">Hyundai</text>
+  <text x="349" y="400" font-size="12" font-weight="700" fill="white" text-anchor="middle">Tucson</text>
+
+  <!-- Chevrolet Silverado -->
+  <rect x="464" y="286" width="200" height="118" rx="12" fill="#0A1E36" stroke="#1A3050" stroke-width="1"/>
+  <path d="M484,363 L484,338 L494,338 L497,314 L588,314 L588,338 L664,338 L664,363 Z" fill="#D32F2F"/>
+  <path d="M497,314 L499,304 L586,304 L588,314 Z" fill="#B71C1C"/>
+  <path d="M499,313 L500,305 L534,305 L534,313 Z" fill="#EF9A9A" opacity="0.5"/>
+  <path d="M538,313 L538,305 L585,305 L585,313 Z" fill="#EF9A9A" opacity="0.5"/>
+  <circle cx="505" cy="363" r="14" fill="#111"/>
+  <circle cx="505" cy="363" r="9" fill="#37474F"/>
+  <circle cx="648" cy="363" r="14" fill="#111"/>
+  <circle cx="648" cy="363" r="9" fill="#37474F"/>
+  <text x="574" y="387" font-size="10" fill="#78909C" text-anchor="middle">Chevrolet</text>
+  <text x="574" y="400" font-size="12" font-weight="700" fill="white" text-anchor="middle">Silverado</text>
+
+  <!-- Tesla Model 3 -->
+  <rect x="676" y="286" width="200" height="118" rx="12" fill="#0A1E36" stroke="#1A3050" stroke-width="1"/>
+  <path d="M696,363 L696,344 L702,344 L706,324 L836,324 L840,344 L876,344 L876,363 Z" fill="#212121"/>
+  <path d="M706,324 C708,316 714,312 720,312 L822,312 C828,312 834,316 836,324 Z" fill="#1A1A1A"/>
+  <path d="M710,323 C712,315 718,313 724,313 L762,313 L762,323 Z" fill="#424242" opacity="0.8"/>
+  <path d="M766,313 L808,313 C814,313 820,315 822,323 L766,323 Z" fill="#424242" opacity="0.8"/>
+  <!-- Pantalla Tesla (simular panel táctil) -->
+  <rect x="755" y="338" width="30" height="22" rx="3" fill="#37474F" opacity="0.6"/>
+  <circle cx="717" cy="363" r="14" fill="#111"/>
+  <circle cx="717" cy="363" r="9" fill="#37474F"/>
+  <circle cx="855" cy="363" r="14" fill="#111"/>
+  <circle cx="855" cy="363" r="9" fill="#37474F"/>
+  <text x="786" y="387" font-size="10" fill="#78909C" text-anchor="middle">Tesla</text>
+  <text x="786" y="400" font-size="12" font-weight="700" fill="white" text-anchor="middle">Model 3</text>
+
+  <!-- ═══ SELECTOR DE COLOR ═══ -->
+  <rect x="0" y="414" width="1024" height="1" fill="#1565C0" opacity="0.3"/>
+  <text x="50" y="438" font-size="13" font-weight="700" fill="white">Color: Toyota Corolla</text>
+  <text x="50" y="456" font-size="11" fill="#546E7A">Selecciona el color de la carrocería</text>
+  
+  <!-- Paleta de colores -->
+  <!-- Blanco Perla (seleccionado) -->
+  <circle cx="120" cy="490" r="22" fill="#F5F5F0"/>
+  <circle cx="120" cy="490" r="22" fill="none" stroke="#1565C0" stroke-width="3"/>
+  <text x="120" y="494" font-size="14" text-anchor="middle">✓</text>
+  <text x="120" y="520" font-size="10" fill="#78909C" text-anchor="middle">Blanco</text>
+  
+  <!-- Negro -->
+  <circle cx="185" cy="490" r="22" fill="#1A1A1A"/>
+  <text x="185" y="520" font-size="10" fill="#78909C" text-anchor="middle">Negro</text>
+  
+  <!-- Plata -->
+  <circle cx="250" cy="490" r="22" fill="#C0C0C0"/>
+  <text x="250" y="520" font-size="10" fill="#78909C" text-anchor="middle">Plata</text>
+  
+  <!-- Gris -->
+  <circle cx="315" cy="490" r="22" fill="#4A4A4A"/>
+  <text x="315" y="520" font-size="10" fill="#78909C" text-anchor="middle">Gris</text>
+  
+  <!-- Rojo -->
+  <circle cx="380" cy="490" r="22" fill="#CC0000"/>
+  <text x="380" y="520" font-size="10" fill="#78909C" text-anchor="middle">Rojo</text>
+  
+  <!-- Azul -->
+  <circle cx="445" cy="490" r="22" fill="#003399"/>
+  <text x="445" y="520" font-size="10" fill="#78909C" text-anchor="middle">Azul</text>
+  
+  <!-- Azul cielo -->
+  <circle cx="510" cy="490" r="22" fill="#4488CC"/>
+  <text x="510" y="520" font-size="10" fill="#78909C" text-anchor="middle">Azul Cielo</text>
+  
+  <!-- Verde -->
+  <circle cx="575" cy="490" r="22" fill="#2D6E2D"/>
+  <text x="575" y="520" font-size="10" fill="#78909C" text-anchor="middle">Verde</text>
+  
+  <!-- Naranja -->
+  <circle cx="640" cy="490" r="22" fill="#DD6600"/>
+  <text x="640" y="520" font-size="10" fill="#78909C" text-anchor="middle">Naranja</text>
+  
+  <!-- Beige -->
+  <circle cx="705" cy="490" r="22" fill="#D4C5A9"/>
+  <text x="705" y="520" font-size="10" fill="#78909C" text-anchor="middle">Beige</text>
+
+  <!-- Botón cerrar -->
+  <rect x="910" y="470" width="80" height="40" rx="10" fill="#1565C0"/>
+  <text x="950" y="495" font-size="13" fill="white" text-anchor="middle">Aplicar</text>
+  <rect x="830" y="470" width="70" height="40" rx="10" fill="#112240" stroke="#1565C0" stroke-width="1"/>
+  <text x="865" y="495" font-size="13" fill="#78909C" text-anchor="middle">Cancelar</text>
+
+</svg>

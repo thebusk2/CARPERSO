@@ -1,0 +1,261 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 600" width="1024" height="600" font-family="'Roboto','Arial',sans-serif">
+  <!-- Fondo pantalla principal -->
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0A1628;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0D2137;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="carBodyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1976D2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0D47A1;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1565C0;stop-opacity:0" />
+      <stop offset="50%" style="stop-color:#42A5F5;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#1565C0;stop-opacity:0" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Fondo -->
+  <rect width="1024" height="600" fill="url(#bgGrad)"/>
+  
+  <!-- Línea de acento superior -->
+  <rect x="0" y="0" width="1024" height="2" fill="#1565C0" opacity="0.8"/>
+  
+  <!-- Línea decorativa horizontal -->
+  <rect x="0" y="510" width="1024" height="1" fill="url(#accentGrad)"/>
+
+  <!-- ═══════════════════════════════════ -->
+  <!-- PANEL IZQUIERDO: RELOJ -->
+  <!-- ═══════════════════════════════════ -->
+  <rect x="0" y="0" width="340" height="510" fill="#0D1B2A" opacity="0.6"/>
+  
+  <!-- Separador vertical -->
+  <rect x="339" y="0" width="1" height="510" fill="#1565C0" opacity="0.4"/>
+  
+  <!-- Reloj principal -->
+  <text x="170" y="145" font-size="80" font-weight="300" fill="white" text-anchor="middle" letter-spacing="-2" filter="url(#glow)">21:05</text>
+  
+  <!-- Segundos -->
+  <text x="170" y="175" font-size="22" fill="#42A5F5" text-anchor="middle" opacity="0.8">:14</text>
+  
+  <!-- Fecha -->
+  <text x="170" y="210" font-size="16" fill="#78909C" text-anchor="middle">Lunes, 3 de Noviembre 2026</text>
+  
+  <!-- Divisor -->
+  <rect x="60" y="228" width="220" height="1" fill="#1565C0" opacity="0.3"/>
+  
+  <!-- Temperatura / info rápida -->
+  <text x="170" y="260" font-size="32" fill="#B0BEC5" text-anchor="middle">🌡 24°C</text>
+  <text x="170" y="285" font-size="13" fill="#546E7A" text-anchor="middle">Nublado · Santo Domingo</text>
+  
+  <!-- Divisor 2 -->
+  <rect x="60" y="308" width="220" height="1" fill="#1565C0" opacity="0.3"/>
+
+  <!-- Botones de acceso rápido -->
+  <text x="170" y="338" font-size="12" fill="#546E7A" text-anchor="middle" letter-spacing="2">ACCESOS RÁPIDOS</text>
+  
+  <!-- Botón Teléfono -->
+  <rect x="50" y="355" width="68" height="68" rx="16" fill="#132035" stroke="#1565C0" stroke-width="1" opacity="0.8"/>
+  <text x="84" y="383" font-size="24" text-anchor="middle">📞</text>
+  <text x="84" y="413" font-size="10" fill="#78909C" text-anchor="middle">Teléfono</text>
+  
+  <!-- Botón Maps -->
+  <rect x="136" y="355" width="68" height="68" rx="16" fill="#132035" stroke="#1565C0" stroke-width="1" opacity="0.8"/>
+  <text x="170" y="383" font-size="24" text-anchor="middle">🗺</text>
+  <text x="170" y="413" font-size="10" fill="#78909C" text-anchor="middle">Mapas</text>
+  
+  <!-- Botón Música -->
+  <rect x="222" y="355" width="68" height="68" rx="16" fill="#132035" stroke="#1565C0" stroke-width="1" opacity="0.8"/>
+  <text x="256" y="383" font-size="24" text-anchor="middle">🎵</text>
+  <text x="256" y="413" font-size="10" fill="#78909C" text-anchor="middle">Música</text>
+
+  <!-- Botones inferiores izq -->
+  <rect x="50" y="440" width="68" height="55" rx="12" fill="#0F2D4A" stroke="#1565C0" stroke-width="1" opacity="0.6"/>
+  <text x="84" y="463" font-size="18" text-anchor="middle">🎨</text>
+  <text x="84" y="486" font-size="9" fill="#78909C" text-anchor="middle">Interfaz</text>
+
+  <rect x="136" y="440" width="68" height="55" rx="12" fill="#0F2D4A" stroke="#1565C0" stroke-width="1" opacity="0.6"/>
+  <text x="170" y="463" font-size="18" text-anchor="middle">🚗</text>
+  <text x="170" y="486" font-size="9" fill="#78909C" text-anchor="middle">Vehículo</text>
+
+  <rect x="222" y="440" width="68" height="55" rx="12" fill="#0F2D4A" stroke="#1565C0" stroke-width="1" opacity="0.6"/>
+  <text x="256" y="463" font-size="18" text-anchor="middle">⚙️</text>
+  <text x="256" y="486" font-size="9" fill="#78909C" text-anchor="middle">Ajustes</text>
+
+  <!-- ═══════════════════════════════════ -->
+  <!-- PANEL CENTRAL/DERECHO: VEHÍCULO -->
+  <!-- ═══════════════════════════════════ -->
+  
+  <!-- Nombre del vehículo -->
+  <text x="690" y="45" font-size="13" fill="#546E7A" text-anchor="middle" letter-spacing="3">VEHÍCULO SELECCIONADO</text>
+  <text x="690" y="78" font-size="28" font-weight="700" fill="white" text-anchor="middle">Toyota RAV4</text>
+  <text x="690" y="102" font-size="14" fill="#1565C0" text-anchor="middle">SUV • Azul Marino</text>
+  
+  <!-- VEHÍCULO SUV (SVG detallado) -->
+  <!-- Sombra del vehículo -->
+  <ellipse cx="690" cy="440" rx="260" ry="18" fill="#000" opacity="0.4"/>
+  
+  <!-- Carrocería principal SUV -->
+  <rect x="380" y="310" width="620" height="1" opacity="0"/><!-- spacer -->
+  
+  <!-- Cuerpo bajo -->
+  <path d="M405,400 L405,345 L420,345 L435,290 L945,290 L960,345 L975,345 L975,400 Z" 
+        fill="url(#carBodyGrad)" filter="url(#shadow)"/>
+  
+  <!-- Techo SUV -->
+  <path d="M435,290 L448,230 L932,230 L945,290 Z" fill="#0D47A1"/>
+  
+  <!-- Rack del techo -->
+  <rect x="460" y="226" width="460" height="5" rx="2" fill="#1565C0" opacity="0.7"/>
+  <rect x="490" y="222" width="4" height="10" rx="2" fill="#42A5F5" opacity="0.5"/>
+  <rect x="560" y="222" width="4" height="10" rx="2" fill="#42A5F5" opacity="0.5"/>
+  <rect x="680" y="222" width="4" height="10" rx="2" fill="#42A5F5" opacity="0.5"/>
+  <rect x="800" y="222" width="4" height="10" rx="2" fill="#42A5F5" opacity="0.5"/>
+  <rect x="880" y="222" width="4" height="10" rx="2" fill="#42A5F5" opacity="0.5"/>
+  
+  <!-- Ventana trasera grande -->
+  <path d="M452,287 L455,235 L620,235 L620,287 Z" fill="#B3E5FC" opacity="0.7"/>
+  
+  <!-- Ventana media -->  
+  <path d="M630,287 L630,235 L780,235 L780,287 Z" fill="#B3E5FC" opacity="0.7"/>
+  
+  <!-- Ventana delantera -->
+  <path d="M790,287 L790,235 L930,235 L930,287 Z" fill="#B3E5FC" opacity="0.7"/>
+
+  <!-- Marco de techo (pilares) -->
+  <rect x="450" y="230" width="5" height="58" fill="#0A3875"/>
+  <rect x="625" y="230" width="5" height="58" fill="#0A3875"/>
+  <rect x="785" y="230" width="5" height="58" fill="#0A3875"/>
+  <rect x="928" y="230" width="5" height="58" fill="#0A3875"/>
+
+  <!-- Línea cintura -->
+  <rect x="405" y="345" width="570" height="4" fill="#42A5F5" opacity="0.6"/>
+  
+  <!-- Panel puerta trasera -->
+  <rect x="410" y="348" width="1" height="50" fill="#1976D2" opacity="0.3"/>
+  
+  <!-- Manija puertas -->
+  <rect x="510" y="358" width="30" height="8" rx="4" fill="#1E3A5F"/>
+  <rect x="740" y="358" width="30" height="8" rx="4" fill="#1E3A5F"/>
+
+  <!-- Guardabarros trasero -->
+  <path d="M405,400 C405,400 415,420 450,428 L540,428 C575,428 585,400 585,400 Z" fill="#0D3A70"/>
+  
+  <!-- Guardabarros delantero -->
+  <path d="M790,400 C790,400 800,420 835,428 L925,428 C960,428 970,400 970,400 Z" fill="#0D3A70"/>
+
+  <!-- RUEDA TRASERA -->
+  <!-- Neumático -->
+  <circle cx="492" cy="420" r="62" fill="#111"/>
+  <!-- Llanta -->
+  <circle cx="492" cy="420" r="42" fill="#37474F"/>
+  <!-- Rayos llanta -->
+  <line x1="492" y1="380" x2="492" y2="398" stroke="#607D8B" stroke-width="6" stroke-linecap="round"/>
+  <line x1="492" y1="442" x2="492" y2="460" stroke="#607D8B" stroke-width="6" stroke-linecap="round"/>
+  <line x1="452" y1="420" x2="470" y2="420" stroke="#607D8B" stroke-width="6" stroke-linecap="round"/>
+  <line x1="514" y1="420" x2="532" y2="420" stroke="#607D8B" stroke-width="6" stroke-linecap="round"/>
+  <line x1="463" y1="391" x2="476" y2="404" stroke="#607D8B" stroke-width="6" stroke-linecap="round"/>
+  <line x1="508" y1="436" x2="521" y2="449" stroke="#607D8B" stroke-width="6" stroke-linecap="round"/>
+  <!-- Buje central -->
+  <circle cx="492" cy="420" r="16" fill="#546E7A"/>
+  <circle cx="492" cy="420" r="8" fill="#78909C"/>
+  <!-- Brillo neumático -->
+  <ellipse cx="472" cy="400" rx="10" ry="6" fill="white" opacity="0.08" transform="rotate(-35,472,400)"/>
+
+  <!-- RUEDA DELANTERA -->
+  <circle cx="878" cy="420" r="62" fill="#111"/>
+  <circle cx="878" cy="420" r="42" fill="#37474F"/>
+  <line x1="878" y1="380" x2="878" y2="398" stroke="#607D8B" stroke-width="6" stroke-linecap="round"/>
+  <line x1="878" y1="442" x2="878" y2="460" stroke="#607D8B" stroke-width="6" stroke-linecap="round"/>
+  <line x1="838" y1="420" x2="856" y2="420" stroke="#607D8B" stroke-width="6" stroke-linecap="round"/>
+  <line x1="900" y1="420" x2="918" y2="420" stroke="#607D8B" stroke-width="6" stroke-linecap="round"/>
+  <line x1="849" y1="391" x2="862" y2="404" stroke="#607D8B" stroke-width="6" stroke-linecap="round"/>
+  <line x1="894" y1="436" x2="907" y2="449" stroke="#607D8B" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="878" cy="420" r="16" fill="#546E7A"/>
+  <circle cx="878" cy="420" r="8" fill="#78909C"/>
+  <ellipse cx="858" cy="400" rx="10" ry="6" fill="white" opacity="0.08" transform="rotate(-35,858,400)"/>
+
+  <!-- Luces traseras -->
+  <rect x="405" y="300" width="10" height="38" rx="3" fill="#EF5350"/>
+  <rect x="405" y="300" width="5" height="10" rx="2" fill="#FF8A80"/>
+  
+  <!-- Faros delanteros LED -->
+  <rect x="965" y="300" width="10" height="28" rx="3" fill="white" opacity="0.9"/>
+  <rect x="965" y="330" width="10" height="10" rx="2" fill="#FF9800"/>
+  <!-- Haz de luz LED -->
+  <line x1="975" y1="308" x2="1010" y2="302" stroke="white" stroke-width="2" opacity="0.3"/>
+  <line x1="975" y1="314" x2="1015" y2="310" stroke="white" stroke-width="1.5" opacity="0.2"/>
+  
+  <!-- Reflejo carrocería -->
+  <path d="M430,340 C450,335 500,338 550,340 L550,346 C500,344 450,341 430,346 Z" fill="white" opacity="0.05"/>
+  <path d="M650,340 C700,335 750,338 800,340 L800,346 C750,344 700,341 650,346 Z" fill="white" opacity="0.05"/>
+
+  <!-- Nombre CARPERSO en la carrocería -->
+  <text x="690" y="380" font-size="26" font-weight="900" fill="white" text-anchor="middle" 
+        opacity="0.15" letter-spacing="8">CARPERSO</text>
+
+  <!-- ═══════════════════════════════════ -->
+  <!-- DOCK INFERIOR -->
+  <!-- ═══════════════════════════════════ -->
+  <rect x="0" y="510" width="1024" height="90" fill="#0A1420" opacity="0.95"/>
+  <rect x="0" y="510" width="1024" height="1" fill="#1565C0" opacity="0.5"/>
+  
+  <!-- Apps del dock -->
+  <!-- WhatsApp -->
+  <rect x="80" y="522" width="60" height="60" rx="14" fill="#075E54"/>
+  <text x="110" y="558" font-size="28" text-anchor="middle">💬</text>
+  <text x="110" y="580" font-size="9" fill="#78909C" text-anchor="middle">WhatsApp</text>
+  
+  <!-- Teléfono -->
+  <rect x="175" y="522" width="60" height="60" rx="14" fill="#1565C0"/>
+  <text x="205" y="558" font-size="28" text-anchor="middle">📞</text>
+  <text x="205" y="580" font-size="9" fill="#78909C" text-anchor="middle">Teléfono</text>
+  
+  <!-- Maps -->
+  <rect x="270" y="522" width="60" height="60" rx="14" fill="#1B5E20"/>
+  <text x="300" y="558" font-size="28" text-anchor="middle">🗺</text>
+  <text x="300" y="580" font-size="9" fill="#78909C" text-anchor="middle">Maps</text>
+  
+  <!-- Spotify -->
+  <rect x="365" y="522" width="60" height="60" rx="14" fill="#1DB954" opacity="0.9"/>
+  <text x="395" y="558" font-size="28" text-anchor="middle">🎵</text>
+  <text x="395" y="580" font-size="9" fill="#78909C" text-anchor="middle">Spotify</text>
+  
+  <!-- YouTube -->
+  <rect x="460" y="522" width="60" height="60" rx="14" fill="#CC0000"/>
+  <text x="490" y="558" font-size="28" text-anchor="middle">▶</text>
+  <text x="490" y="580" font-size="9" fill="#78909C" text-anchor="middle">YouTube</text>
+  
+  <!-- Configuración -->
+  <rect x="555" y="522" width="60" height="60" rx="14" fill="#37474F"/>
+  <text x="585" y="558" font-size="28" text-anchor="middle">⚙</text>
+  <text x="585" y="580" font-size="9" fill="#78909C" text-anchor="middle">Ajustes</text>
+  
+  <!-- Cámara -->
+  <rect x="650" y="522" width="60" height="60" rx="14" fill="#212121"/>
+  <text x="680" y="558" font-size="28" text-anchor="middle">📷</text>
+  <text x="680" y="580" font-size="9" fill="#78909C" text-anchor="middle">Cámara</text>
+  
+  <!-- Botón editar dock -->
+  <rect x="930" y="525" width="50" height="50" rx="12" fill="#0F2040" stroke="#1565C0" stroke-width="1" opacity="0.7"/>
+  <text x="955" y="553" font-size="20" text-anchor="middle">✏️</text>
+  <text x="955" y="570" font-size="8" fill="#546E7A" text-anchor="middle">Editar</text>
+
+  <!-- ═══════════════════════════════════ -->
+  <!-- BARRA SUPERIOR (STATUS BAR) -->
+  <!-- ═══════════════════════════════════ -->
+  <rect x="340" y="0" width="684" height="20" fill="#0A1420" opacity="0.5"/>
+  <text x="1010" y="15" font-size="11" fill="#78909C" text-anchor="end">🔋 87% · 📶 LTE</text>
+
+  <!-- Label pantalla -->
+  <text x="512" y="195" font-size="11" fill="#1565C0" text-anchor="middle" letter-spacing="4" opacity="0.6">● ● ●</text>
+
+</svg>

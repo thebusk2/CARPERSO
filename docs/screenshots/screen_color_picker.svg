@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 600" width="1024" height="600" font-family="'Roboto','Arial',sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0A1628" />
+      <stop offset="100%" style="stop-color:#0D2137" />
+    </linearGradient>
+    <linearGradient id="hueGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF0000"/>
+      <stop offset="16.6%" stop-color="#FFFF00"/>
+      <stop offset="33.3%" stop-color="#00FF00"/>
+      <stop offset="50%" stop-color="#00FFFF"/>
+      <stop offset="66.6%" stop-color="#0000FF"/>
+      <stop offset="83.3%" stop-color="#FF00FF"/>
+      <stop offset="100%" stop-color="#FF0000"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Fondo -->
+  <rect width="1024" height="600" fill="url(#bgGrad)"/>
+  <rect width="1024" height="600" fill="#000" opacity="0.4"/>
+  <rect width="1024" height="600" fill="#112240" opacity="0.9"/>
+
+  <!-- Título -->
+  <text x="512" y="45" font-size="22" font-weight="700" fill="white" text-anchor="middle">🎨  Color de la Interfaz</text>
+  <rect x="40" y="58" width="944" height="1" fill="#1565C0" opacity="0.5"/>
+
+  <!-- ═══ PREVIEW DEL COLOR ═══ -->
+  <rect x="40" y="72" width="944" height="70" rx="12" fill="#1565C0"/>
+  <text x="512" y="113" font-size="16" fill="white" text-anchor="middle" opacity="0.9">Vista previa de la interfaz</text>
+  <text x="512" y="134" font-size="12" fill="white" text-anchor="middle" opacity="0.6">El color azul se aplica a toda la interfaz</text>
+
+  <!-- ═══ COLORES PREDEFINIDOS ═══ -->
+  <text x="50" y="168" font-size="13" fill="#78909C" letter-spacing="2">COLORES PREDEFINIDOS</text>
+  
+  <!-- Paleta 1: Azul (activo) -->
+  <circle cx="85" cy="200" r="26" fill="#1565C0"/>
+  <circle cx="85" cy="200" r="26" fill="none" stroke="white" stroke-width="3"/>
+  <text x="85" y="205" font-size="16" text-anchor="middle" fill="white">✓</text>
+  <text x="85" y="236" font-size="10" fill="#42A5F5" text-anchor="middle">Azul Marino</text>
+  
+  <!-- Paleta 2: Rojo Ferrari -->
+  <circle cx="155" cy="200" r="26" fill="#C62828"/>
+  <text x="155" y="236" font-size="10" fill="#78909C" text-anchor="middle">Rojo</text>
+  
+  <!-- Paleta 3: Verde esmeralda -->
+  <circle cx="225" cy="200" r="26" fill="#1B5E20"/>
+  <text x="225" y="236" font-size="10" fill="#78909C" text-anchor="middle">Verde</text>
+  
+  <!-- Paleta 4: Morado -->
+  <circle cx="295" cy="200" r="26" fill="#4A148C"/>
+  <text x="295" y="236" font-size="10" fill="#78909C" text-anchor="middle">Morado</text>
+  
+  <!-- Paleta 5: Naranja -->
+  <circle cx="365" cy="200" r="26" fill="#E65100"/>
+  <text x="365" y="236" font-size="10" fill="#78909C" text-anchor="middle">Naranja</text>
+  
+  <!-- Paleta 6: Cian -->
+  <circle cx="435" cy="200" r="26" fill="#006064"/>
+  <text x="435" y="236" font-size="10" fill="#78909C" text-anchor="middle">Cian</text>
+  
+  <!-- Paleta 7: Rosa -->
+  <circle cx="505" cy="200" r="26" fill="#AD1457"/>
+  <text x="505" y="236" font-size="10" fill="#78909C" text-anchor="middle">Rosa</text>
+  
+  <!-- Paleta 8: Ámbar -->
+  <circle cx="575" cy="200" r="26" fill="#FF6F00"/>
+  <text x="575" y="236" font-size="10" fill="#78909C" text-anchor="middle">Ámbar</text>
+  
+  <!-- Paleta 9: Teal -->
+  <circle cx="645" cy="200" r="26" fill="#004D40"/>
+  <text x="645" y="236" font-size="10" fill="#78909C" text-anchor="middle">Teal</text>
+  
+  <!-- Paleta 10: Gris azulado -->
+  <circle cx="715" cy="200" r="26" fill="#37474F"/>
+  <text x="715" y="236" font-size="10" fill="#78909C" text-anchor="middle">Gris Azulado</text>
+
+  <!-- ═══ SLIDERS HSV ═══ -->
+  <rect x="40" y="258" width="944" height="1" fill="#1A3050" opacity="0.8"/>
+  <text x="50" y="282" font-size="13" fill="#78909C" letter-spacing="2">PERSONALIZADO (HSV)</text>
+
+  <!-- Slider Tono -->
+  <text x="50" y="316" font-size="13" fill="#B0BEC5">Tono</text>
+  <text x="974" y="316" font-size="13" fill="#546E7A" text-anchor="end">215°</text>
+  <!-- Track degradado de tono -->
+  <rect x="50" y="322" width="924" height="10" rx="5" fill="url(#hueGrad)"/>
+  <!-- Pulgar -->
+  <circle cx="600" cy="327" r="12" fill="white" stroke="#1565C0" stroke-width="2"/>
+
+  <!-- Slider Saturación -->
+  <text x="50" y="366" font-size="13" fill="#B0BEC5">Saturación</text>
+  <text x="974" y="366" font-size="13" fill="#546E7A" text-anchor="end">82%</text>
+  <rect x="50" y="372" width="924" height="10" rx="5" fill="#1A2F4A"/>
+  <rect x="50" y="372" width="757" height="10" rx="5" fill="#1565C0" opacity="0.7"/>
+  <circle cx="807" cy="377" r="12" fill="#1565C0" stroke="white" stroke-width="2"/>
+
+  <!-- Slider Brillo -->
+  <text x="50" y="416" font-size="13" fill="#B0BEC5">Brillo</text>
+  <text x="974" y="416" font-size="13" fill="#546E7A" text-anchor="end">78%</text>
+  <rect x="50" y="422" width="924" height="10" rx="5" fill="#1A2F4A"/>
+  <rect x="50" y="422" width="720" height="10" rx="5" fill="#42A5F5" opacity="0.5"/>
+  <circle cx="770" cy="427" r="12" fill="#42A5F5" stroke="white" stroke-width="2"/>
+
+  <!-- Vista previa en tiempo real (mini) -->
+  <rect x="40" y="455" width="944" height="1" fill="#1A3050" opacity="0.5"/>
+  
+  <!-- Simulación de cómo se ve la interfaz en tiempo real -->
+  <text x="50" y="478" font-size="12" fill="#546E7A">Vista en tiempo real →</text>
+  
+  <!-- Mini dock preview -->
+  <rect x="200" y="460" width="600" height="40" rx="8" fill="#1565C0" opacity="0.15"/>
+  <circle cx="260" cy="480" r="12" fill="#1565C0" opacity="0.8"/>
+  <circle cx="310" cy="480" r="12" fill="#1565C0" opacity="0.6"/>
+  <circle cx="360" cy="480" r="12" fill="#1565C0" opacity="0.6"/>
+  <circle cx="410" cy="480" r="12" fill="#1565C0" opacity="0.6"/>
+  <circle cx="460" cy="480" r="12" fill="#1565C0" opacity="0.6"/>
+  <circle cx="510" cy="480" r="12" fill="#1565C0" opacity="0.6"/>
+  <text x="560" y="485" font-size="22" text-anchor="middle">⟩</text>
+
+  <!-- Botones -->
+  <rect x="40" y="526" width="460" height="52" rx="12" fill="#1565C0"/>
+  <text x="270" y="558" font-size="16" fill="white" text-anchor="middle" font-weight="600">✓  Aplicar Color</text>
+  
+  <rect x="524" y="526" width="460" height="52" rx="12" fill="#112240" stroke="#1565C0" stroke-width="1.5"/>
+  <text x="754" y="558" font-size="16" fill="#78909C" text-anchor="middle">✕  Cancelar</text>
+
+</svg>
