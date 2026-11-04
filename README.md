@@ -22,30 +22,30 @@
 ## 📸 Capturas de pantalla
 
 ### 🏠 Pantalla Principal
-> Reloj, fecha, accesos rápidos, vehículo seleccionado con fotos reales o silueta personalizada y dock inferior
+> Reloj, fecha, accesos rápidos, vehículo seleccionado con fotos reales offline (ejemplo Hyundai Santa Fe) y dock inferior
 
-![Pantalla principal](docs/screenshots/screen_home.svg)
+![Pantalla principal](docs/screenshots/screen_home.png)
 
 ---
 
 ### 🚗 Selector de Vehículo y Color
-> Más de 40 modelos comerciales con fotos reales integradas offline (Hyundai Santa Fe, RAV4, CR-V, F-150, etc.)
+> Más de 40 modelos comerciales con fotos reales integradas offline (Hyundai Santa Fe, RAV4, CR-V, Sorento, Mustang, Silverado, CX-5, Model 3...)
 
-![Selector de vehículo](docs/screenshots/screen_vehicle_picker.svg)
+![Selector de vehículo](docs/screenshots/screen_vehicle_picker.png)
 
 ---
 
 ### 🎨 Selector de Color de Interfaz
 > Colores predefinidos + sliders HSV para personalización total
 
-![Selector de color](docs/screenshots/screen_color_picker.svg)
+![Selector de color](docs/screenshots/screen_color_picker.png)
 
 ---
 
 ### 📱 Cajón de Aplicaciones
 > Grid reordenable con arrastre, búsqueda, modo edición y anclado al dock
 
-![Cajón de apps](docs/screenshots/screen_app_drawer.svg)
+![Cajón de apps](docs/screenshots/screen_app_drawer.png)
 
 ---
 
