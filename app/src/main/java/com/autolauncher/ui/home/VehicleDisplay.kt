@@ -23,10 +23,12 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.Path
 import androidx.compose.ui.graphics.drawscope.DrawScope
 import androidx.compose.ui.graphics.drawscope.Fill
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import coil.compose.SubcomposeAsyncImage
 import com.autolauncher.data.VehicleModel
 
 /**
@@ -87,20 +89,41 @@ fun VehicleDisplay(
                 modifier = Modifier.padding(bottom = 16.dp)
             )
 
-            // ── Silueta del vehículo dibujada en Canvas ──
+            // ── Foto real del vehículo con fallback a silueta Canvas ──
             Box(
                 modifier = Modifier
-                    .fillMaxWidth(0.9f)
-                    .aspectRatio(2.5f) // proporción typical de un carro visto de lado
+                    .fillMaxWidth(0.92f)
+                    .aspectRatio(2.4f),
+                contentAlignment = Alignment.Center
             ) {
-                Canvas(modifier = Modifier.fillMaxSize()) {
-                    drawVehicleSilhouette(
-                        category = vehicle.category,
-                        bodyColor = animatedVehicleColor,
-                        accentColor = animatedAccent,
-                        windowColor = Color(0xFF88BBDD).copy(alpha = 0.6f)
-                    )
-                }
+                SubcomposeAsyncImage(
+                    model = vehicle.photoUri,
+                    contentDescription = "${vehicle.brand} ${vehicle.displayName}",
+                    modifier = Modifier
+                        .fillMaxSize()
+                        .clip(RoundedCornerShape(16.dp)),
+                    contentScale = ContentScale.Fit,
+                    loading = {
+                        Canvas(modifier = Modifier.fillMaxSize()) {
+                            drawVehicleSilhouette(
+                                category = vehicle.category,
+                                bodyColor = animatedVehicleColor,
+                                accentColor = animatedAccent,
+                                windowColor = Color(0xFF88BBDD).copy(alpha = 0.6f)
+                            )
+                        }
+                    },
+                    error = {
+                        Canvas(modifier = Modifier.fillMaxSize()) {
+                            drawVehicleSilhouette(
+                                category = vehicle.category,
+                                bodyColor = animatedVehicleColor,
+                                accentColor = animatedAccent,
+                                windowColor = Color(0xFF88BBDD).copy(alpha = 0.6f)
+                            )
+                        }
+                    }
+                )
             }
 
             Spacer(Modifier.height(16.dp))

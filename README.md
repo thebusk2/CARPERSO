@@ -9,6 +9,7 @@
 </p>
 
 <p align="center">
+  <img src="https://img.shields.io/badge/Release-v1.1.0-blue?logo=github" alt="v1.1.0"/>
   <img src="https://img.shields.io/badge/Android-7.0%2B-brightgreen?logo=android" alt="Android 7+"/>
   <img src="https://img.shields.io/badge/Kotlin-2.1.0-blue?logo=kotlin" alt="Kotlin"/>
   <img src="https://img.shields.io/badge/Jetpack%20Compose-1.6.x-blue?logo=jetpackcompose" alt="Compose"/>
@@ -21,14 +22,14 @@
 ## 📸 Capturas de pantalla
 
 ### 🏠 Pantalla Principal
-> Reloj, fecha, accesos rápidos, vehículo seleccionado con color personalizado y dock inferior
+> Reloj, fecha, accesos rápidos, vehículo seleccionado con fotos reales o silueta personalizada y dock inferior
 
 ![Pantalla principal](docs/screenshots/screen_home.svg)
 
 ---
 
 ### 🚗 Selector de Vehículo y Color
-> 32 modelos comerciales en 6 categorías con paleta de 12 colores por vehículo
+> Más de 40 modelos comerciales con fotos reales integradas offline (Hyundai Santa Fe, RAV4, CR-V, F-150, etc.)
 
 ![Selector de vehículo](docs/screenshots/screen_vehicle_picker.svg)
 
@@ -53,7 +54,8 @@
 | Función | Descripción |
 |---------|-------------|
 | 🏠 **Launcher HOME** | Reemplaza la pantalla de inicio del sistema — sin root |
-| 🚗 **32 modelos** | Toyota, Honda, Ford, Chevrolet, Nissan, Tesla, Hyundai, Kia, VW, BMW, Mercedes y más |
+| 🚗 **40+ modelos** | Hyundai Santa Fe, Tucson, Elantra, Toyota RAV4, Corolla, Hilux, Fortuner, Honda Civic, CR-V, Accord, Ford Mustang, F-150, Explorer, Tahoe, Silverado, Kia Sorento, Sportage, Mazda CX-5, Jeep Grand Cherokee, Tesla Model 3 y más |
+| 📸 **Fotos reales** | Fotos reales de alta definición integradas offline (funcionan 100% sin conexión a internet) |
 | 🎨 **Color de interfaz** | 10 presets + selector HSV completo — cambia todo el tema en tiempo real |
 | 🖌️ **Color del vehículo** | Blanco perla, negro obsidiana, plata, rojo, azul marino, verde, naranja y más |
 | 📱 **Cajón de apps** | Grid 5 columnas con búsqueda, reordenamiento por arrastre |
@@ -67,45 +69,58 @@
 ## 📋 Vehículos disponibles
 
 <details>
-<summary><strong>Sedanes (8 modelos)</strong></summary>
+<summary><strong>Sedanes (11 modelos)</strong></summary>
 
 | Marca | Modelo |
 |-------|--------|
 | Toyota | Corolla |
+| Toyota | Camry |
 | Honda | Civic |
+| Honda | Accord |
 | Nissan | Sentra |
-| Chevrolet | Aveo |
+| Chevrolet | Malibu |
 | Volkswagen | Jetta |
 | Hyundai | Elantra |
-| Kia | Rio |
-| Toyota | Camry |
+| Kia | Cerato |
+| Mazda | Mazda3 |
+| Tesla | Model 3 |
 </details>
 
 <details>
-<summary><strong>SUV (8 modelos)</strong></summary>
+<summary><strong>SUV (17 modelos)</strong></summary>
 
 | Marca | Modelo |
 |-------|--------|
+| Hyundai | Santa Fe |
+| Hyundai | Tucson |
+| Kia | Sorento |
+| Kia | Sportage |
+| Mazda | CX-5 |
+| Jeep | Grand Cherokee |
+| Jeep | Compass |
+| Toyota | Fortuner |
 | Toyota | RAV4 |
 | Honda | CR-V |
-| Chevrolet | Captiva |
+| Chevrolet | Tahoe |
+| Chevrolet | Equinox |
+| Ford | Explorer |
 | Ford | Escape |
-| Hyundai | Tucson |
-| Kia | Sportage |
 | Nissan | X-Trail |
-| Mitsubishi | Outlander |
+| Volkswagen | Tiguan |
+| Subaru | Forester |
 </details>
 
 <details>
-<summary><strong>Pick-up / Camionetas (5 modelos)</strong></summary>
+<summary><strong>Pick-up / Camionetas (6 modelos)</strong></summary>
 
 | Marca | Modelo |
 |-------|--------|
 | Ford | F-150 |
+| Ford | Ranger |
 | Chevrolet | Silverado |
 | Toyota | Hilux |
 | Nissan | Frontier |
-| RAM | 1500 |
+| Volkswagen | Amarok |
 </details>
 
 <details>
@@ -113,10 +128,10 @@
 
 | Marca | Modelo |
 |-------|--------|
-| Toyota | Yaris |
+| Volkswagen | Golf |
+| Ford | Focus |
 | Honda | Fit |
-| Volkswagen | Polo |
-| Chevrolet | Spark |
+| Renault | Sandero |
 </details>
 
 <details>
@@ -124,19 +139,9 @@
 
 | Marca | Modelo |
 |-------|--------|
-| Honda | Accord Coupé |
 | Ford | Mustang |
 | Chevrolet | Camaro |
-</details>
-
-<details>
-<summary><strong>Furgoneta / Van (3 modelos)</strong></summary>
-
-| Marca | Modelo |
-|-------|--------|
-| Toyota | Hiace |
-| Ford | Transit |
-| Chevrolet | Express |
+| Honda | Civic Coupé |
 </details>
 
 ---
@@ -153,14 +158,14 @@
 ## 📲 Instalación
 
 ### Opción 1: APK directo (más fácil)
-1. Descarga [`AutoLauncher-debug.apk`](AutoLauncher-debug.apk) — ⚠️ No incluido en git; compila o descarga del release
+1. Descarga [`CARPERSO.apk`](CARPERSO.apk)
 2. Copia al pendrive o transfiere por ADB
 3. Instala desde el gestor de archivos de la radio
 4. Ve a **Ajustes → Apps predeterminadas → Launcher** y selecciona **CARPERSO**
 
 ### Opción 2: ADB (USB)
 ```bash
-adb install AutoLauncher-debug.apk
+adb install CARPERSO.apk
 ```
 
 ### Opción 3: Compilar desde fuente
@@ -173,7 +178,7 @@ export JAVA_HOME=~/jdk17/Contents/Home   # Ajustar según tu sistema
 export ANDROID_HOME=~/Library/Android/sdk
 
 ./gradlew assembleDebug
-# APK generado en: app/build/outputs/apk/debug/app-debug.apk
+# APK generado en: app/build/outputs/apk/debug/CARPERSO.apk
 ```
 
 > **Nota macOS con disco NTFS**: el directorio `build` está redirigido a `/tmp/AutoLauncher_build/` en `app/build.gradle.kts` para evitar errores de permisos NTFS.

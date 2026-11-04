@@ -15,8 +15,15 @@ android {
         applicationId = "com.autolauncher"
         minSdk = 24
         targetSdk = 34
-        versionCode = 1
-        versionName = "1.0.0"
+        versionCode = 2
+        versionName = "1.1.0"
+        setProperty("archivesBaseName", "CARPERSO")
+    }
+
+    applicationVariants.all {
+        outputs.all {
+            (this as? com.android.build.gradle.internal.api.BaseVariantOutputImpl)?.outputFileName = "CARPERSO.apk"
+        }
     }
 
     buildTypes {

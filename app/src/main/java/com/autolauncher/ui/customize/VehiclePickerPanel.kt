@@ -18,10 +18,12 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
+import coil.compose.SubcomposeAsyncImage
 import com.autolauncher.data.VehicleCategory
 import com.autolauncher.data.VehicleCatalog
 import com.autolauncher.data.VehicleModel
@@ -189,7 +191,7 @@ private fun VehicleCard(
 
     Card(
         modifier = modifier
-            .height(120.dp)
+            .height(130.dp)
             .clickable(onClick = onSelect),
         shape = RoundedCornerShape(12.dp),
         colors = CardDefaults.cardColors(
@@ -218,15 +220,31 @@ private fun VehicleCard(
                 Spacer(Modifier.height(16.dp))
             }
 
-            // Mini silueta del vehículo
+            // Foto real o mini silueta del vehículo
             Box(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .height(45.dp)
+                    .height(55.dp),
+                contentAlignment = Alignment.Center
             ) {
-                androidx.compose.foundation.Canvas(modifier = Modifier.fillMaxSize()) {
-                    drawVehicleMiniSilhouette(vehicle.category, vehicleColor.color)
-                }
+                SubcomposeAsyncImage(
+                    model = vehicle.photoUri,
+                    contentDescription = vehicle.displayName,
+                    modifier = Modifier
+                        .fillMaxSize()
+                        .clip(RoundedCornerShape(8.dp)),
+                    contentScale = ContentScale.Fit,
+                    loading = {
+                        androidx.compose.foundation.Canvas(modifier = Modifier.fillMaxSize()) {
+                            drawVehicleMiniSilhouette(vehicle.category, vehicleColor.color)
+                        }
+                    },
+                    error = {
+                        androidx.compose.foundation.Canvas(modifier = Modifier.fillMaxSize()) {
+                            drawVehicleMiniSilhouette(vehicle.category, vehicleColor.color)
+                        }
+                    }
+                )
             }
 
             Column(horizontalAlignment = Alignment.CenterHorizontally) {

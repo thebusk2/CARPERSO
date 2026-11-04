@@ -12,8 +12,14 @@ data class VehicleModel(
     val category: VehicleCategory,
     val availableColors: List<VehicleColor>,
     /** Nombre del drawable SVG/vector base (sin color) */
-    val drawableName: String
-)
+    val drawableName: String,
+    /** Ruta de la foto real en assets o URL remota */
+    val imageAsset: String? = null
+) {
+    /** URI para Coil (assets locales offline o URL remota) */
+    val photoUri: String
+        get() = imageAsset ?: "file:///android_asset/vehicles/${id}.jpg"
+}
 
 enum class VehicleCategory(val displayName: String) {
     SEDAN("Sedán"),
@@ -126,8 +132,88 @@ object VehicleCatalog {
             availableColors = full() + listOf(VehicleColors.ORANGE),
             drawableName = "vehicle_sedan_mazda3"
         ),
+        VehicleModel(
+            id = "toyota_camry",
+            displayName = "Camry",
+            brand = "Toyota",
+            category = VehicleCategory.SEDAN,
+            availableColors = full(),
+            drawableName = "vehicle_sedan_camry"
+        ),
+        VehicleModel(
+            id = "honda_accord",
+            displayName = "Accord",
+            brand = "Honda",
+            category = VehicleCategory.SEDAN,
+            availableColors = full(),
+            drawableName = "vehicle_sedan_accord"
+        ),
+        VehicleModel(
+            id = "tesla_model3",
+            displayName = "Model 3",
+            brand = "Tesla",
+            category = VehicleCategory.SEDAN,
+            availableColors = common() + listOf(VehicleColors.RED, VehicleColors.WHITE, VehicleColors.BLUE),
+            drawableName = "vehicle_sedan_model3"
+        ),
 
         // ═══════════ SUVs ═══════════
+        VehicleModel(
+            id = "hyundai_santa_fe",
+            displayName = "Santa Fe",
+            brand = "Hyundai",
+            category = VehicleCategory.SUV,
+            availableColors = full(),
+            drawableName = "vehicle_suv_santafe"
+        ),
+        VehicleModel(
+            id = "kia_sorento",
+            displayName = "Sorento",
+            brand = "Kia",
+            category = VehicleCategory.SUV,
+            availableColors = full(),
+            drawableName = "vehicle_suv_sorento"
+        ),
+        VehicleModel(
+            id = "mazda_cx5",
+            displayName = "CX-5",
+            brand = "Mazda",
+            category = VehicleCategory.SUV,
+            availableColors = full() + listOf(VehicleColors.RED),
+            drawableName = "vehicle_suv_cx5"
+        ),
+        VehicleModel(
+            id = "jeep_grand_cherokee",
+            displayName = "Grand Cherokee",
+            brand = "Jeep",
+            category = VehicleCategory.SUV,
+            availableColors = full(),
+            drawableName = "vehicle_suv_cherokee"
+        ),
+        VehicleModel(
+            id = "toyota_fortuner",
+            displayName = "Fortuner",
+            brand = "Toyota",
+            category = VehicleCategory.SUV,
+            availableColors = full(),
+            drawableName = "vehicle_suv_fortuner"
+        ),
+        VehicleModel(
+            id = "chevrolet_tahoe",
+            displayName = "Tahoe",
+            brand = "Chevrolet",
+            category = VehicleCategory.SUV,
+            availableColors = full(),
+            drawableName = "vehicle_suv_tahoe"
+        ),
+        VehicleModel(
+            id = "ford_explorer",
+            displayName = "Explorer",
+            brand = "Ford",
+            category = VehicleCategory.SUV,
+            availableColors = full(),
+            drawableName = "vehicle_suv_explorer"
+        ),
         VehicleModel(
             id = "toyota_rav4",
             displayName = "RAV4",

@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <!-- Acceso a internet para cargar imágenes o actualizaciones -->
+    <uses-permission android:name="android.permission.INTERNET" />
     <!-- Listar apps instaladas para el cajón -->
     <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"
         tools:ignore="QueryAllPackagesPermission" />
