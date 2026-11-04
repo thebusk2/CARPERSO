@@ -166,7 +166,7 @@ adb install AutoLauncher-debug.apk
 ### Opción 3: Compilar desde fuente
 ```bash
 # Requisitos: JDK 17, Android SDK (API 34+)
-git clone https://github.com/TU_USUARIO/CARPERSO.git
+git clone https://github.com/thebusk2/CARPERSO.git
 cd CARPERSO
 
 export JAVA_HOME=~/jdk17/Contents/Home   # Ajustar según tu sistema
